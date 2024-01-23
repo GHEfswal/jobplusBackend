@@ -23,7 +23,7 @@ module.exports = {
 
     {
       method: "DELETE",
-      path: "/applied-jobs/:jobId/:usrId",
+      path: "/applied-jobs/:jobId/:userId",
       handler: "applied-job.withdrawApplication",
     },
   ],

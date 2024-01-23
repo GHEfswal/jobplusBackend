@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 /**
  * job controller
@@ -8,7 +8,7 @@ module.exports = ({ strapi }) => ({
   async find(ctx) {
     try {
       const userId = ctx.request.header["x-user-id"];
-      console.log("userId", userId);
+      // console.log("userId", userId);
 
       ctx.body = await strapi.service("api::job.job").find(ctx.query, userId);
     } catch (error) {
